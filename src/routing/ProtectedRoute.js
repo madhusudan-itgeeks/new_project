@@ -3,6 +3,7 @@ import MainMenu from '../menu/MainMenu'
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from '../menu/Dashboard'
 import Partner from '../menu/Partner'
+import { Login } from '../components/auth/Login'
 
 
 function ProtectedRoute() {
@@ -13,6 +14,8 @@ function ProtectedRoute() {
             <Route path='dashboard' element={<Dashboard/>}/>
             <Route path='partners' element={<Partner/>}/>
              </Route>
+
+             <Route path='/' element={<Login/>}/>
             
        
         </Routes>

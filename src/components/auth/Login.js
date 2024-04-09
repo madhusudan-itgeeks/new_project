@@ -5,9 +5,11 @@ import axios from "axios";
 import toast from "react-hot-toast";
  import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from 'react-router-dom';
  
 
 export const Login = () => {
+    const navigate=useNavigate()
    const [error, setError] = useState(null);
                console.log(error);
                const LoginupSchema = Yup.object().shape({
@@ -28,6 +30,7 @@ export const Login = () => {
       });
 
       toast.success("Login  Successfully!");
+      navigate('menu')
        console.log(data.data);
       const token = data.data.token;
       console.log(token);
@@ -250,8 +253,8 @@ export const Login = () => {
                     </ErrorMessage>
                   </div>
                   <div className="hover-div " type="submit">
-                    <button className="submit-btn">Log In</button>
-                    <button className="submit-btn1">Log In</button>
+                    <button className="submit-btn" type="submit">Log In</button>
+                    <button className="submit-btn1" type="submit">Log In</button>
                   </div>
                 </div>
               </Form>
