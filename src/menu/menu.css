@@ -1,0 +1,179 @@
+.main-menu{
+    width: 70px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  gap: 30px;
+    padding: 15px;
+    /* height: 100vh; */
+ 
+}
+.menu{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main-menu p{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+.main-menu span{
+    font-size: 24px;
+    opacity: .7;
+    cursor: pointer;
+}
+.inside-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.root-menu{
+    padding: 15px;
+}
+.header{
+    width: 99%;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px; */
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.header img{
+    width: 132px;
+    padding: 15px;
+}
+
+.btn-container {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    background:rgb(221, 241, 134);
+    display: flex;
+    padding: 3px;
+    /* padding-bottom: 12px; */
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+}
+
+.hover-div {
+    width: calc(100% - 50px);
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 25px;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+}
+
+.hover-div:hover .submit-btn {
+    transform: translateY(-50px);
+}
+
+.hover-div:hover .submit-btn1 {
+    transform: translateY(-30px);
+}
+
+.submit-btn {
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    text-align: center;
+    color: var(--token-8f599746-56fa-4597-8628-b9b0e22722ee, #333333);
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    --variable-reference-x_VAmvrCR-eGTvgLduo: rgb(0, 0, 0);
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    transition: 300ms ease-in-out;
+}
+
+.submit-btn1 {
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    text-align: center;
+    color: var(--token-8f599746-56fa-4597-8628-b9b0e22722ee, #333333);
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    white-space: pre;
+    z-index: 0;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    --variable-reference-x_VAmvrCR-eGTvgLduo: rgb(0, 0, 0);
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    transition: 300ms ease-in-out;
+}
+
+.main-dashboard{
+    /* width: 100%; */
+    background-color: rgb(255,255,255);
+    padding: 15px;
+    display: flex;
+  gap: 30px;
+}
+.counting-number{
+    width: 200px;
+    border: 1px solid #d7d6d6;
+    /* padding: 15px; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.counting-number p{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    opacity: .8;
+}
+.counting-number span{
+    font-family: "Poppins", sans-serif;
+    opacity: .8;
+}
+.main-partner{
+    width: calc(100vw);
+}
