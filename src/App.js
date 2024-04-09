@@ -6,17 +6,11 @@ import { Partner } from './components/partner/Partner';
 
 function App() {
   return (
-  <>
-   <div>
-        <Toaster position="top-right" reverseOrder={true} />
-        
-      </div>
-      <div>
-        {/* <Login/> */}
-        <Partner/>
-       </div>
-    </>
+    <div className="App">
+      <Toaster />
+      <Login />
      
+    </div>
   );
 }
 
