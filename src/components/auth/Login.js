@@ -21,6 +21,7 @@ export const Login = () => {
                             });
              
   const onSubmit = async (values) => {
+    console.log(values)
     setError("");
 
     try {
@@ -30,21 +31,28 @@ export const Login = () => {
       });
 
       toast.success("Login  Successfully!");
-      navigate('menu')
+      // navigate('menu')
        console.log(data.data);
       const token = data.data.token;
       console.log(token);
       sessionStorage.setItem("token", token);
-    } catch (e) {
-      if (e === 400) {
-        toast.error("bad request");
-      } else if (e === 404) {
-        toast.error("Network Error Retry");
-      } else if (e.message) {
-        toast.error("Login in unSuccessfully.");
-        setError(e.message);
+    }catch (e) {
+      console.error("Error:", e);
+      if (e.response) {
+        const status = e.response.status;
+        if (status === 400) {
+          toast.error("Bad request");
+        } else if (status === 404) {
+          toast.error("Network error, please retry");
+        } else {
+          toast.error("Login unsuccessful");
+        }
+      } else {
+        toast.error("An error occurred while logging in");
       }
+      setError("An error occurred while logging in");
     }
+      
     console.log(values);
   };
 

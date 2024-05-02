@@ -14,7 +14,7 @@ function MenuBar() {
 
         sessionStorage.clear('token');
 
-        navigate('/');
+        navigate('/login');
     };
 
     const handleConfirmLogout = () => {
@@ -65,11 +65,11 @@ function MenuBar() {
             <span><TbHeartHandshake/></span>
             <p>Partners</p>
         </div>
-        <div className='inside-menu'>
+        <div className='inside-menu' onClick={()=>navigate("App")}>
             <span><GrStatusUnknown/></span>
             <p>App Status</p>
         </div>
-        <div className='inside-menu'>
+        <div className='inside-menu' onClick={()=>navigate("Profile")}>
             <span><CgProfile/></span>
             <p>Profile</p>
         </div>

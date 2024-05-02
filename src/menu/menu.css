@@ -1,11 +1,12 @@
 .main-menu{
-    width: 80px;
+    width: 100px;
     background-color: rgb(255,255,255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   gap: 30px;
+  border-radius: 5px;
     padding: 15px;
     /* height: 100vh; */
  
@@ -45,15 +46,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 15px; */
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+    padding: 15px;
+    /* padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    border-radius: 5px;
 }
 .header img{
     width: 135px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .btn-container1 {
@@ -154,6 +155,7 @@
     padding: 15px;
     display: flex;
   gap: 30px;
+  border-radius: 5px;
 }
 .counting-number{
     width: 200px;
@@ -177,6 +179,7 @@
 }
 .main-partner{
     width: calc(100vw);
+    border-radius: 5px;
 }
 
 .modal {
